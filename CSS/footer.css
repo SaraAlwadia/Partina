@@ -1,0 +1,156 @@
+        * {
+            margin: 0;
+            padding: 0;
+            font-weight: normal;
+        }
+        
+        footer.footer {
+            height: fit-content;
+            position: relative;
+            background: #3F4551;
+        }
+        
+        .div-margin-footer {
+            width: 1024px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 1.5rem 0;
+        }
+        
+        .div-margin-footer .footer-links {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .div-margin-footer .footer-links ul {
+            margin: 0;
+        }
+        
+        footer.footer .div-margin-footer h3 {
+            color: #FFF;
+            font-size: 1rem;
+            margin: 15px 0;
+        }
+        
+        footer.footer .div-margin-footer li a {
+            color: #e8e8e8;
+            font-size: 0.75rem;
+            line-height: 1.7;
+            padding: 0;
+            margin: 0;
+        }
+        
+        hr {
+            color: #e8e8e8;
+            height: .5px;
+        }
+        
+        .rights p {
+            color: #e8e8e8;
+            font-size: 0.9rem;
+            font-weight: normal;
+            text-align: center;
+            padding: 10px;
+        }
+        
+        footer.footer .div-margin-footer .follow-us {
+            text-align: center;
+        }
+        
+        footer.footer .div-margin-footer .social {
+            display: flex;
+            justify-content: space-between;
+        }
+        /* footer.footer .div-margin-footer .social a {
+        margin: 10px;
+    } */
+        
+        footer.footer .div-margin-footer .social i {
+            font-size: 1.7rem;
+            color: var(--main_color);
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+        }
+        
+        .move-up {
+            position: absolute;
+            right: 0;
+            bottom: 100px;
+            font-size: 1.7rem;
+            background: var(--main_color);
+            padding: 5px 19px;
+            color: var(--white_color);
+            border-top-left-radius: 7px;
+            border-bottom-left-radius: 7px;
+            text-align: center;
+            cursor: pointer;
+        }
+        /**************Responsive*********************/
+        
+        @media only screen and (min-width: 991px) and (max-width: 1024px) {
+            .div-margin-footer {
+                width: 890px;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+        }
+        
+        @media only screen and (min-width: 665px) and (max-width: 991px) {
+            .div-margin-footer {
+                width: 600px;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+        }
+        
+        @media only screen and (min-width: 300px) and (max-width: 665px) {
+            .div-margin-footer {
+                width: 70%;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                flex-wrap: wrap;
+            }
+            footer.footer .div-margin-footer .social {
+                display: flex;
+                width: 70%;
+                margin: auto;
+                justify-content: space-between;
+            }
+            .rights p {
+                font-size: 0.7rem;
+                padding: 10px;
+            }
+        }
+        
+        @media only screen and (max-width: 300px) {
+            .div-margin-footer {
+                width: 90%;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                margin: auto;
+                flex-wrap: wrap;
+                text-align: center;
+            }
+            footer.footer .div-margin-footer .social {
+                display: flex;
+                width: 60%;
+                margin: auto;
+                justify-content: space-between;
+            }
+            .rights p {
+                font-size: 0.6rem;
+                padding: 10px;
+            }
+        }
