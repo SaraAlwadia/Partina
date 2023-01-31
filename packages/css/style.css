@@ -1,0 +1,330 @@
+        /* @import url('../../Fonts/fonts.css'); */
+        
+        @import url('../CSS/fonts.css');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: var(--Roborto)
+        }
+        
+         :root {
+            /*Theme Color*/
+            --main_color: #ff8d8d;
+            --second_color: #272c32;
+            --btn_color: #3f4551;
+            --white_color: #FFF;
+            --shadow-color: #fdfdfdfd;
+            --Roborto: 'Roboto', 'sans-serif';
+            --Roboto-Slab: 'Roboto-Slab', 'sans-serif';
+        }
+        
+        main section.package-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 70px;
+        }
+        
+        .pack-container {
+            width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .capitalize {
+            text-transform: capitalize;
+        }
+        
+        a {
+            text-decoration: none;
+            font-size: medium;
+            color: var(--second_color);
+        }
+        
+        nav a.active {
+            color: var(--main_color);
+        }
+        
+        section.header {
+            text-align: center;
+            font-size: 1.3rem;
+            background: #0A1420;
+            /* margin-bottom: 1.2rem; */
+            padding: 3rem 0 0;
+            margin: auto;
+            line-height: 1.8;
+        }
+        
+        section.header h1 {
+            color: var(--white_color);
+        }
+        
+        section.header h1 span {
+            color: var(--main_color);
+            font-family: var(--Roboto-Slab);
+        }
+        
+        section.header #pick-package {
+            background: var(--main_color);
+            font-size: 1rem;
+            outline: none;
+            border: none;
+            padding: 10px 2px;
+            border-radius: 5px;
+            margin-top: 30px;
+            -webkit-border-radius: 7px;
+            -moz-border-radius: 7px;
+            -ms-border-radius: 7px;
+            -o-border-radius: 7px;
+            height: 40px;
+            width: 290px;
+        }
+        
+        .bg {
+            margin: 0;
+            height: 9rem;
+            background: rgb(10, 20, 32);
+            background: linear-gradient(180deg, rgba(10, 20, 32, 1)30%, rgb(108 125 146 / 0%)95%, rgba(237, 237, 237, 0)100%);
+        }
+        
+        #pick-package {
+            color: var(--white_color);
+            cursor: pointer;
+        }
+        
+        section.ready-pack {
+            margin: 5vh auto;
+        }
+        
+        section.ready-pack h2 {
+            text-align: center;
+            font-size: 1.5rem;
+            color: var(--second_color);
+            margin-top: 20px;
+        }
+        /****************************************/
+        
+        .card {
+            width: 300px;
+            height: fit-content;
+            background-color: var(--white_color);
+            border-radius: 10px;
+            padding: 12px;
+            text-align: start;
+            box-shadow: 0px 0px 20px #b9b9b9ed;
+            margin: 1.2rem 10px;
+        }
+        
+        .box-card {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .add-cart {
+            position: absolute;
+            background: var(--white_color);
+            border: none;
+            outline: none;
+            margin: 7px;
+            border-radius: 7px;
+            padding: 5px;
+            cursor: pointer;
+            right: 4px;
+            transition: all ease-in .2s;
+            -webkit-transition: all ease-in .2s;
+            -moz-transition: all ease-in .2s;
+            -ms-transition: all ease-in .2s;
+            -o-transition: all ease-in .2s;
+        }
+        
+        .add-cart .active-add {
+            display: none;
+        }
+        
+        .add-cart img.no-hov {
+            width: 23px;
+            transition: all ease-in-out .3s;
+            -webkit-transition: all ease-in-out .3s;
+            -moz-transition: all ease-in-out .3s;
+            -ms-transition: all ease-in-out .3s;
+            -o-transition: all ease-in-out .3s;
+        }
+        
+        .add-cart img.hov {
+            width: 25px;
+            margin-right: 5px;
+        }
+        
+        .add-cart:hover img.no-hov {
+            display: none;
+        }
+        
+        .add-cart:hover .active-add {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            color: var(--second_color);
+            font-size: .9rem;
+        }
+        
+        .imges {
+            height: 180px;
+            border-radius: 10px;
+            background: #888;
+        }
+        
+        .card h2 {
+            margin: 13px 2px 0;
+            font-size: 1.2rem;
+        }
+        
+        .card p {
+            margin: 13px 2px 0;
+            font-size: 1rem;
+        }
+        
+        .show-more {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 15px;
+        }
+        
+        .show-more h2 {
+            color: var(--main_color);
+            /* font-weight: bold; */
+            text-decoration: none;
+            position: relative;
+            font-size: 1rem;
+            padding: 0;
+            margin: 0;
+            cursor: pointer;
+        }
+        
+        .card .btn {
+            display: flex;
+            position: relative;
+            width: 50%;
+            justify-content: space-between;
+        }
+        
+        .card .btn button {
+            width: 30rem;
+            height: 2.2rem;
+            border-radius: 7px;
+            border: none;
+            color: var(--white_color);
+            outline: none;
+            font-size: .7rem;
+            margin: 5px 2px;
+        }
+        
+        .card .btn .price {
+            background-color: var(--btn_color);
+        }
+        
+        .card .btn .discribtion {
+            background-color: var(--main_color);
+        }
+        /***************/
+        /*******************Responsive*********************/
+        
+        @media only screen and (min-width: 991px) and (max-width: 1024px) {
+            .div-margin {
+                width: 800px;
+            }
+            .pack-container {
+                width: 880px;
+            }
+            /* .card {
+                width: calc(100%/2 - 2vw);
+            } */
+            section.header {
+                font-size: .9rem;
+            }
+            section.header #pick-package {
+                /* width: 55%; */
+                font-size: .8rem;
+            }
+        }
+        
+        @media only screen and (min-width: 665px) and (max-width: 991px) {
+            .div-margin {
+                width: 655px;
+            }
+            .pack-container {
+                width: 655px;
+            }
+            .card {
+                /* width: calc(100%/2 - 2vw); */
+                margin: 20px auto;
+            }
+            section.header {
+                font-size: .82rem;
+            }
+            section.header #pick-package {
+                font-size: .5rem;
+            }
+            section.header #pick-package a {
+                font-size: .8rem;
+            }
+            section.ready-pack h2 {
+                font-size: 1.5rem;
+            }
+        }
+        
+        @media only screen and (min-width: 300px) and (max-width: 665px) {
+            .div-margin {
+                width: 90%;
+            }
+            .pack-container {
+                width: 90%;
+            }
+            .card {
+                /* width: calc(96% - 2vw); */
+                margin: 20px auto;
+            }
+            section.header h1 {
+                color: var(--white_color);
+                font-size: 1.5rem;
+            }
+            section.header {
+                font-size: 1.9rem;
+            }
+            section.header #pick-package {
+                width: 290;
+                font-size: .8rem;
+            }
+            section.header #pick-package a {
+                font-size: .8rem;
+            }
+            section.ready-pack h2 {
+                font-size: 1.5rem;
+            }
+        }
+        
+        @media only screen and (max-width: 300px) {
+            .div-margin {
+                width: 99%;
+            }
+            .container {
+                width: 99%;
+            }
+            .card {
+                /* width: calc(99% - 1vw); */
+                margin: 20px auto;
+            }
+            section.header {
+                font-size: .82rem;
+            }
+            section.header #pick-package {
+                width: 90%;
+                font-size: .8rem;
+            }
+            section.ready-pack h2 {
+                font-size: 1.5rem;
+            }
+        }

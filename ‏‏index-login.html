@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Web application for make your booking easier" />
+    <meta name="robots" content="index,follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./CSS/fonts.css">
+    <!-- cdjns  -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <!--Font Awesome Icons-->
+    <link rel="stylesheet" href="./CSS/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!------Owl-Carousel------->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+
+    <!--Popup Package-->
+    <link rel="stylesheet" href="./popup package/css/splide-default.min.css">
+    <link rel="stylesheet" href="./popup package/css/popup-package.css">
+
+    <!--CSS Style-->
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/logo.css">
+    <link rel="stylesheet" href="./chatbot/css/style.css">
+    <link rel="stylesheet" href="./CSS/nav-signin.css">
+    <link rel="stylesheet" href="./CSS/footer-light.css">
+
+    <!--JQuery Online-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>Partina</title>
+</head>
+
+<body>
+
+    <nav class="nav-bar max-width ">
+        <div class="logo">
+            <a href="./index-login.html"><img src="./imgs/partina.svg" alt=""></a>
+        </div>
+        <ul class="nav-elements ">
+            <li><a href="# " class="hover-underline-animation active ">Home</a></li>
+            <li><a href="# " class="hover-underline-animation ">Marriage</a></li>
+            <li><a href="# " class="hover-underline-animation ">Birthday</a></li>
+            <li><a href="# " class="hover-underline-animation ">Graduation</a></li>
+            <li><a href="# " class="hover-underline-animation ">Meeting</a></li>
+            <li><a href="# " class="hover-underline-animation ">Youth Parties</a></li>
+            <li><a href="./packages/package.html " class="hover-underline-animation ">Packages</a></li>
+        </ul>
+        <div class="sign-cart ">
+            <div class="toggle-collapse">
+                <div class="toggle-icons ">
+                    <i class="fas fa-bars "></i>
+                </div>
+            </div>
+            <button class="cart-img "><a href="./cart/cart.html "><img src="./imgs/cart.PNG " alt=" " class="cart "><img src="./imgs/card-bg.png " alt=" " class="cart-bg "></a></button>
+            <div class="profile-img dropdown">
+                <button class="dropdown-toggle "><img src="./imgs/woman.png " alt=" "></button>
+                <ul id="myDropdown" class="dropdown-content dropdown">
+                    <li class="profile-menu ">
+                        <a href="./profile/profile.html ">Profile</a>
+                    </li>
+                    <li class="profile-menu ">
+                        <a href="./profile/profile.html ">Setting</a>
+                    </li>
+                    <li class="profile-menu ">
+                        <a href="./index.html ">Sign Out</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+
+
+    <main>
+        <section>
+            <section class="hero-section max-width">
+                <div class="left-side">
+                    <div class="text">
+                        <h1 class="capitalize">
+                            let's make your <br /> Life easier with <br /> partina
+                            <span id="title-icon"><img src="imgs/component/ball.png"></span>
+                        </h1>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <img src="./imgs/girl.png" alt="" class="big-one" />
+                    <div class="chat-container">
+                        <div class="chatbox">
+                            <div class="chatbox__support">
+                                <div class="chatbox__header">
+                                    <div class="chatbox__image--header">
+                                        <img src="./imgs/bot.jpg" alt="" />
+                                    </div>
+                                    <div class="chatbox__content--header">
+                                        <h4 class="chatbox__heading--header">Partina</h4>
+                                        <p class="chatbox__description--header">Hi. My name is Sara. How can I help you?</p>
+                                    </div>
+                                </div>
+                                <div class="chatbox__messages">
+                                    <div></div>
+                                </div>
+                                <div class="chatbox__footer">
+                                    <input type="text" placeholder="Write a message...">
+                                    <button class="chatbox__send--footer send__button">Send</button>
+                                </div>
+                            </div>
+                            <div class="chatbox__button">
+                                <button><img src="./imgs/chat.png" alt="" class="text-us" /></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+
+        <!--About Us Section-->
+        <section>
+            <div class="about max-width ">
+                <div class="im "></div>
+                <div class="txt ">
+                    <h2 class="capitalize ">About us</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet nostrum quasi ex exercitationem earum iste et enim ipsum eos aspernatur nisi, tempore adipisci dolorum pariatur nulla. Expedita minus tenetur voluptas. Impedit illum iure
+                        reiciendis omnis aspernatur saepe vitae facere accusantium, sit, laudantium nobis aperiam illo nostrum. Rem culpa veniam illum doloribus necessitatibus repellendus nemo, harum suscipit enim debitis fuga itaque aperiam hic. Error
+                        corporis at deserunt iure! Totam, ducimus quam.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!--Start Stores Section-->
+        <section class="explore max-width " id="explore">
+            <div>
+                <h2 class="capitalize ">Explore Store</h2>
+                <div id="exp-cont">
+                    <div class="explore-icons " id="explore-icons1">
+                        <img class="icon-img " src="./imgs/component/cake-birthday (1).png ">
+                        <a class="capitalize " href="# ">Cake</a>
+                    </div>
+                    <div class="explore-icons " id="explore-icons2">
+                        <img class="icon-img " src="./imgs/component/flower (1).png ">
+                        <a class="capitalize " href="# ">Roses</a>
+                    </div>
+                    <div class="explore-icons " id="explore-icons3">
+                        <img class="icon-img " src="./imgs/component/taxi (1).png ">
+                        <a class="capitalize " href="# ">Car office</a>
+                    </div>
+                    <div class="explore-icons " id="explore-icons4">
+                        <img class="icon-img " src="./imgs/component/gift (1).png ">
+                        <a class="capitalize " href="# ">gifts</a>
+                    </div>
+                    <div class="explore-icons " id="explore-icons5">
+                        <img class="icon-img " src="./imgs/component/barber-shop.png ">
+                        <a class="capitalize " href="# ">Hairdresser</a>
+                    </div>
+                    <div class="explore-icons " id="explore-icons6">
+                        <img class="icon-img " src="./imgs/component/balloons (1).png ">
+                        <a class="capitalize " href="# ">Decoration</a>
+                    </div>
+                    <div class="explore-icons " id="explore-icons7">
+                        <img class="icon-img " src="./imgs/component/camera (1).png ">
+                        <a class="capitalize " href="# ">Photographer</a>
+                    </div>
+                </div>
+                <div class="cate ">
+                    <a class="capitalize " id="cate" href="# "> show more stores <span>&gt;</span> </a>
+                </div>
+            </div>
+        </section>
+        <!--End Stores Section-->
+
+
+        <!--Start Package Section-->
+        <section class="packge-index max-width " id="packge">
+            <h2 class="capitalize ">Packages</h2>
+            <div class="cards " id="cards ">
+
+                <div class="card1 " id="card1">
+                    <div class="box-card " id="box-card">
+                        <button class="add-cart " id="add-to" data-title="Marrage Package" data-price="150">
+                            <img src="./imgs/cart.PNG " alt=" " class="no-hov ">
+                            <div class="active-add "><img src="./imgs/act-card.png " alt=" " class="hov "> Add to cart</div>
+                        </button>
+                        <div class="imges" id="imges">
+                            <img>
+                        </div>
+                        <div class="package-details ">
+                            <h2>Birthday Party</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ducimus inventore iure.</p>
+                            <div class="show-more">
+                                <h2 class="details">Show More</h2>
+                                <div class="btn ">
+                                    <button type="submit " class="price " id="price1">150 &#8362;</button>
+                                    <button type="submit " class="description " id="discribtion1">Book</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card1 " id="card2">
+                    <div class="box-card " id="box-card2">
+                        <button class="add-cart " id="add-to2" data-title="Marrage Package" data-price="150">
+                            <img src="./imgs/cart.PNG " alt=" " class="no-hov ">
+                            <div class="active-add "><img src="./imgs/act-card.png " alt=" " class="hov "> Add to cart</div>
+                        </button>
+                        <div class="imges " id="imges2">
+                            <img>
+                        </div>
+                        <div class="package-details ">
+                            <h2>Birthday Party</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ducimus inventore iure.</p>
+                            <div class="show-more ">
+                                <h2 class="details">Show More</h2>
+                                <div class="btn ">
+                                    <button type="submit " class="price " id="price2">150 &#8362;</button>
+                                    <button type="submit " class="description " id="discribtion2">Book</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3 class="capitalize "><a href="# "> Show More Packges &gt;</a></h3>
+        </section>
+        <!--End Package Section-->
+
+
+        <!--Start popup package section-->
+        <section class="package-pop " id="package-pop">
+            <div class=" package-gallery " id="package-gallery1">
+                <button class="exit ">
+                    <i class="fa-regular fa-x "></i>
+                </button>
+                <div class="left ">
+                    <section id="main-carousel" class="splide ">
+                        <div class="splide__track ">
+                            <ul class="splide__list ">
+                                <li class="splide__slide ">
+                                    <img src="./imgs/h1.jpg " alt=" ">
+                                </li>
+                                <li class="splide__slide ">
+                                    <img src="./imgs/h2.jpg " alt=" ">
+                                </li>
+                                <li class="splide__slide ">
+                                    <img src="./imgs/h3.jpg " alt=" ">
+                                </li>
+                                <li class="splide__slide ">
+                                    <img src="./imgs/h4.jpg " alt=" ">
+                                </li>
+                                <li class="splide__slide ">
+                                    <img src="./imgs/h5.jpg " alt=" ">
+                                </li>
+                                <li class="splide__slide ">
+                                    <img src="./imgs/h6.jpg " alt=" ">
+                                </li>
+                                <li class="splide__slide ">
+                                    <img src="./imgs/h7.jpg " alt=" ">
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="right ">
+                    <div class="info ">
+                        <div class="up-sec ">
+                            <h2 id="head1">Birthday Party</h2>
+                            <ul>
+                                <li class="info-list ">Lorem ipsum dolor sit amet</li>
+                                <li class="info-list ">Lorem ipsum dolor sit amet</li>
+                                <li class="info-list ">Lorem ipsum dolor sit amet</li>
+                                <li class="info-list ">Lorem ipsum dolor sit amet</li>
+                                <li class="info-list ">Lorem ipsum dolor sit amet</li>
+                                <li class="info-list ">Lorem ipsum dolor sit amet</li>
+                            </ul>
+                        </div>
+                        <div class="down-sec ">
+                            <h3>Fill in information:</h3>
+                            <div class="book-time ">
+                                <label for="package-date1 " class="capitalize ">Booking date</label>
+                                <input type="date " id="package-date1">
+                            </div>
+                            <div class="book-time ">
+                                <label for="package-timefrom1 " class="capitalize ">Booking Time <span>(from:)</span></label>
+                                <input type="time " id="package-timefrom1">
+                            </div>
+                            <div class="book-time ">
+                                <label for="package-timeto1 " class="capitalize ">Booking Time <span>(to:)</span></label>
+                                <input type="time " id="package-timeto1">
+                            </div>
+                            <div class="btns ">
+                                <div id="pric ">150<span> &#8362;</span></div>
+                                <button class="book "><a href="# ">Booking</a></button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!--End popup package section-->
+
+
+        <!--Start Partener Section-->
+        <section class="partener max-width ">
+            <h2 class="capitalize ">Parteners</h2>
+            <div class="owl-carousel owl-theme ">
+                <div class="partener-logo ">
+                    <a href="# "><img src="./imgs/mazag.png " alt=" " class="parten-logo "></a>
+                </div>
+                <div class="partener-logo ">
+                    <a href="# "><img src="./imgs/mazag.png " alt=" " class="parten-logo "></a>
+                </div>
+                <div class="partener-logo ">
+                    <a href="# "><img src="./imgs/mazag.png " alt=" " class="parten-logo "></a>
+                </div>
+                <div class="partener-logo ">
+                    <a href="# "><img src="./imgs/mazag.png " alt=" " class="parten-logo "></a>
+                </div>
+                <div class="partener-logo ">
+                    <a href="# "><img src="./imgs/mazag.png " alt=" " class="parten-logo "></a>
+                </div>
+                <div class="partener-logo ">
+                    <a href="# "><img src="./imgs/mazag.png " alt=" " class="parten-logo "></a>
+                </div>
+                <div class="partener-logo ">
+                    <a href="# "><img src="./imgs/mazag.png " alt=" " class="parten-logo "></a>
+                </div>
+                <div class="partener-logo ">
+                    <a href="# "><img src="./imgs/mazag.png " alt=" " class="parten-logo "></a>
+                </div>
+            </div>
+        </section>
+        <!--End Partener Section-->
+
+
+        <!--Start Partenership Request-->
+        <section class="partenetship-request ">
+            <div class="partenership-container max-width ">
+                <h2 class="partenership capitalize ">Partnership Request</h2>
+                <div class="partinership-req-container ">
+                    <div class="partenership-btn ">
+                        <button class="hover-underline-animation active " id="co" onclick="signin() ">Company</button>
+                        <button class="hover-underline-animation " id="team" onclick="signup() ">Team</button>
+                    </div>
+                    <div class=" info ">
+                        <div class="partenerform-info " id="co-info">
+                            <h3 class="capitalize ">Company Request</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis asperiores recusandae laborum eius dicta optio voluptates delectus expedita iusto, sint minus at placeat! Perspiciatis numquam inventore temporibus harum eos
+                                corporis.
+                            </p>
+                            <button class="fillin-form ">Fill in Form</button>
+                        </div>
+                        <div class="partenerform-info " id="team-info">
+                            <h3 class="capitalize ">Team Request</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis asperiores recusandae laborum eius dicta optio voluptates delectus expedita iusto, sint minus at placeat! Perspiciatis numquam inventore temporibus harum eos
+                                corporis.
+                            </p>
+                            <button class="fillin-form ">Fill in Form</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End Partenership Request-->
+    </main>
+
+
+    <!--Start Footer-->
+    <footer class="light-footer ">
+        <div class="container-footer div-margin-footer max-width ">
+            <div class="footer-list ">
+                <h3 class="capitalize ">Events</h3>
+                <ul class="events-list ">
+                    <li><a href="# ">Wedding Hole</a></li>
+                    <li><a href="# ">Restaurant</a></li>
+                    <li><a href="# ">Hotels</a></li>
+                    <li><a href="# ">Chalets</a></li>
+                    <li><a href="# ">Packages</a></li>
+                </ul>
+            </div>
+            <div class="footer-list ">
+                <h3 class="capitalize ">shops</h3>
+                <ul class="shops-list ">
+                    <li><a href="# ">Cake</a></li>
+                    <li><a href="# ">Roses</a></li>
+                    <li><a href="# ">Car office</a></li>
+                    <li><a href="# ">Gifts</a></li>
+                    <li><a href="# ">Hairdresser</a></li>
+                    <li><a href="# ">Decoration</a></li>
+                    <li><a href="# ">Youth parties</a></li>
+                </ul>
+            </div>
+            <div class="footer-list ">
+                <h3 class="capitalize ">Support</h3>
+                <ul class="support-list ">
+                    <li><a href="# ">About us</a></li>
+                    <li><a href="# ">Contact us</a></li>
+                    <li><a href="# ">Help</a></li>
+                </ul>
+            </div>
+            <div class="footer-list ">
+                <h3 class="capitalize ">follow us</h3>
+                <div class="social ">
+                    <a href="# " target="_blank "><i class="fab fa-instagram "></i></a>
+                    <a href="# " target="_blank "><i class=" fab fa-facebook-f "></i></a>
+                    <a href="# " target="_blank "><i class=" fab fa-twitter "></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="move-up ">
+            <span><i class="fa-solid fa-arrow-up "></i></span>
+        </div>
+        <hr>
+        <div class="rights ">
+            <h4>
+                <p>Copyright &copy;2022 Partina.co. All rights reserved.
+                </p>
+            </h4>
+        </div>
+    </footer>
+    <!--End Footer-->
+
+
+
+    <script src="path-to-the-file/splide.min.js "></script>
+    <script src="./JS/jquery3.4.1.min.js "></script>
+    <script src="./JS/owl.carousel.js "></script>
+    <script src="./JS/owl.carousel.min.js "></script>
+    <script src="./JS/aos.js "></script>
+    <script src="./JS/splide.min.js "></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var splide = new Splide('.splide');
+            splide.mount();
+        });
+    </script>
+    <script src="./popup package/js/gallery.js "></script>
+    <script src="./chatbot/js/app.js "></script>
+    <script src="./JS/move-up.js"></script>
+</body>
+
+</html>

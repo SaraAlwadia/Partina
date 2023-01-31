@@ -1,0 +1,74 @@
+    @import url('../CSS/fonts.css');
+    body {
+        background: #ededed;
+        margin: 0;
+        padding: 0;
+    }
+    
+     :root {
+        /*Theme Color*/
+        --main_color: #ff8d8d;
+        --second_color: #272c32;
+        --btn_color: #3f4551;
+        --white_color: #FFF;
+        --shadow-color: #757575;
+    }
+    
+    .done-container {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 300px;
+        background: var(--white_color);
+        margin: auto;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    h1 {
+        color: var(--second_color);
+        font-size: 1.4rem;
+    }
+    
+    img.done {
+        margin: 15px 0;
+        width: 50px;
+    }
+    
+    .cont {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 280px;
+    }
+    
+    .cont img {
+        width: 22px;
+        height: 22px;
+    }
+    
+    p {
+        color: #4BB543;
+    }
+    
+    .done-container button.btn {
+        width: 280px;
+        background: var(--main_color);
+        font-size: 1rem;
+        outline: none;
+        border: none;
+        padding: 10px 2px;
+        border-radius: 5px;
+        margin-top: 10px;
+        -webkit-border-radius: 7px;
+        -moz-border-radius: 7px;
+        -ms-border-radius: 7px;
+        -o-border-radius: 7px;
+    }
+    
+    .done-container button.btn a {
+        text-decoration: none;
+        color: var(--white_color);
+    }
